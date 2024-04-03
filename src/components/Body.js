@@ -1,11 +1,10 @@
+import React from 'react'
 import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router-dom';
-import Body from './components/Body';
-import Browse from './components/Browse';
-import Login from './components/Login';
+import Browse from '../components/Browse';
+import Login from '../components/Login';
 
-function App() {
-  
+const Body = () => {
   const appRouter = createBrowserRouter([
     {
       path: "/",
@@ -24,4 +23,4 @@ function App() {
     );
 }
 
-export default App;
+export default Body
